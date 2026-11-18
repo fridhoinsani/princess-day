@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffd1e3">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="Kejutan kecil untuk Rista di Hari Princess, 18 November.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Selamat Hari Princess, Rista 👑">
+<meta property="og:description" content="Ada kejutan kecil untukmu. Buka ya 💌">
+<title>Selamat Hari Princess, Rista 👑</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%91%91%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{--p1:#fff5f9;--p2:#ffd8e8;--p3:#ff9ec4;--p4:#e04882;--p5:#9c1d52;--gold:#d99b26;--ink:#54203b;color-scheme:light}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{
+  font-family:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  font-size:1.22rem;color:var(--ink);min-height:100vh;overflow-x:hidden;
+  padding-left:env(safe-area-inset-left);padding-right:env(safe-area-inset-right);
+  background-color:#ffdbe9;
+  background:
+    radial-gradient(ellipse at 15% 0%,#fff 0%,transparent 48%),
+    radial-gradient(ellipse at 88% 32%,#ffc2da 0%,transparent 52%),
+    radial-gradient(ellipse at 20% 78%,#ffe4ef 0%,transparent 50%),
+    linear-gradient(180deg,#fff5f9 0%,#ffdbe9 52%,#ffc6dc 100%);
+}
+.script{font-family:'Pinyon Script','Snell Roundhand','Apple Chancery','Brush Script MT',cursive;font-weight:400}
+.vh{position:fixed;top:0;left:0;width:1px;height:1px;margin:0;opacity:0;pointer-events:none}
+#petals{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:60}
+section{max-width:900px;margin:0 auto;padding:82px 22px;text-align:center;position:relative}
+h2{font-size:2.8rem;font-size:clamp(2.5rem,8vw,3.7rem);line-height:1.15;color:var(--p5);margin-bottom:8px;padding:.1em 0}
+.sub{max-width:36ch;margin:0 auto 28px;opacity:.85;font-size:1.2rem}
+button,label.btn,label.env,label.tab{font:inherit;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.btn,.g-btn{-webkit-appearance:none;appearance:none}
+:focus-visible{outline:3px solid var(--p4);outline-offset:4px}
+#gate:focus-visible ~ #intro .btn,
+#open-mail:focus-visible ~ .env{outline:3px solid var(--p4);outline-offset:4px}
+#f1:focus-visible ~ .tabs .t1,#f2:focus-visible ~ .tabs .t2,#f3:focus-visible ~ .tabs .t3,#f4:focus-visible ~ .tabs .t4{outline:3px solid var(--p4);outline-offset:3px}
+
+/* Layar pembuka */
+#intro{
+  position:fixed;top:0;left:0;right:0;bottom:0;z-index:100;
+  display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;
+  text-align:center;padding:24px;overflow-y:auto;
+  background:radial-gradient(circle at 50% 35%,#fff 0%,#ffe4ef 48%,#ffb9d4 100%);
+  transition:opacity .9s ease,visibility .9s ease;
+}
+#intro>*{margin:8px 0}
+#gate:checked ~ #intro,body.go #intro{opacity:0;visibility:hidden;pointer-events:none}
+#intro svg{width:165px;height:165px;pointer-events:none;filter:drop-shadow(0 12px 20px rgba(224,72,130,.2));animation:pulse 3.2s ease-in-out infinite}
+#intro h1{font-size:2.4rem;font-size:clamp(2.3rem,8vw,3.5rem);color:var(--p5);line-height:1.2}
+#intro p{font-style:italic;opacity:.8}
+.btn{display:inline-block;background:#e04882;background:linear-gradient(135deg,#ff80b2,#e04882);color:#fff;border:0;border-radius:99px;padding:.72em 2em;font-size:1.2rem;font-weight:600;box-shadow:0 10px 28px -8px #e04882,inset 0 1px 1px rgba(255,255,255,.55);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 16px 32px -8px #e04882}
+.btn:active{transform:scale(.97)}
+@keyframes pulse{50%{transform:scale(1.06) rotate(3deg)}}
+
+/* Hero */
+#hero{min-height:100vh;min-height:100svh;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;padding-top:34px;padding-bottom:40px}
+#crown{width:76px;margin-bottom:-6px;filter:drop-shadow(0 6px 10px rgba(217,155,38,.35))}
+h1.t{font-size:3.4rem;font-size:clamp(3.2rem,13vw,6.4rem);line-height:1.15;padding:.1em .2em;color:#e04882;
+  background:linear-gradient(100deg,#b51756,#e04882 40%,#ff8fb8 70%,#b51756);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.badge{display:inline-block;max-width:92vw;padding:4px 16px;border-radius:22px;background:rgba(255,255,255,.6);border:1px solid #f7a8c6;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;color:var(--p5);margin-top:4px;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+#bq{width:88vw;max-width:430px;height:auto;margin-top:10px;filter:drop-shadow(0 24px 24px rgba(194,24,91,.18));will-change:transform;animation:float 7s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-8px)}}
+.down{display:inline-block;margin-top:14px;color:var(--p5);font-size:1.12rem;text-decoration:none}
+
+.stem{fill:none;stroke:#5d9c6c;stroke-width:4.8;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420}
+#gate:checked ~ main .stem,body.go .stem{animation:draw 1.3s ease-out .2s forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+.bloom{opacity:0;transform-origin:0 0}
+#gate:checked ~ main .bloom,body.go .bloom{animation:bloom 1.4s cubic-bezier(.2,1.35,.4,1) var(--d,0s) both}
+@keyframes bloom{from{transform:scale(0) rotate(-40deg);opacity:0}to{transform:scale(1) rotate(0);opacity:1}}
+.fade{opacity:0}
+#gate:checked ~ main .fade,body.go .fade{animation:fin 1.3s ease var(--d,0s) both}
+@keyframes fin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* Makna bunga (tab CSS murni) */
+.tabs{text-align:center;margin-bottom:20px}
+.tab{display:inline-block;margin:4px;background:rgba(255,255,255,.72);border:1.5px solid #f5a6c5;color:var(--p5);padding:7px 16px;border-radius:99px;font-size:1.05rem;font-weight:600;transition:all .25s;-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.tab:hover{background:#fff;transform:translateY(-2px)}
+#f1:checked ~ .tabs .t1,#f2:checked ~ .tabs .t2,#f3:checked ~ .tabs .t3,#f4:checked ~ .tabs .t4{background:#e04882;background:linear-gradient(135deg,#ff7fb1,#e04882);color:#fff;border-color:transparent;box-shadow:0 8px 18px -6px #e04882}
+.stage{max-width:440px;margin:0 auto;padding:28px 20px;border-radius:28px;background:rgba(255,255,255,.62);border:1.5px solid rgba(255,255,255,.87);box-shadow:0 20px 40px -24px rgba(194,24,91,.4);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.fcard{display:none}
+#f1:checked ~ .stage .c1,#f2:checked ~ .stage .c2,#f3:checked ~ .stage .c3,#f4:checked ~ .stage .c4{display:block;animation:fin .55s ease both}
+.f-svg{width:220px;height:220px;width:min(64vw,230px);height:min(64vw,230px);margin:0 auto;display:block;overflow:visible;filter:drop-shadow(0 14px 16px rgba(194,24,91,.18));transition:transform .35s cubic-bezier(.3,1.5,.5,1)}
+.f-svg:hover{transform:scale(1.06) rotate(4deg)}
+.why{max-width:32ch;margin:14px auto 0;font-size:1.34rem;font-style:italic;line-height:1.45}
+.why b{display:block;font-style:normal;font-weight:600;font-size:2.3rem;color:var(--p4);line-height:1.15;margin-bottom:4px}
+.why .tag{display:inline-block;font-style:normal;font-size:.92rem;letter-spacing:.04em;color:var(--p5);background:#ffe3ee;padding:2px 12px;border-radius:99px;margin-bottom:8px}
+
+/* Amplop & surat */
+.env{position:relative;display:block;margin:0 auto;width:300px;width:min(88vw,370px);height:235px;border:0;border-radius:12px;background:#ffb0cd;background:linear-gradient(160deg,#ffc2d9,#ff9ec4);box-shadow:0 22px 40px -16px rgba(194,24,91,.6);transition:transform .4s}
+.env:hover{transform:translateY(-6px) rotate(-1deg)}
+.env::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;border-radius:12px;background:#ffb0cd;-webkit-clip-path:polygon(0 100%,50% 42%,100% 100%);clip-path:polygon(0 100%,50% 42%,100% 100%);pointer-events:none}
+.env .flap{position:absolute;left:0;right:0;top:0;height:60%;background:#ff95bd;background:linear-gradient(180deg,#ffa9c9,#ff88b5);-webkit-clip-path:polygon(0 0,100% 0,50% 100%);clip-path:polygon(0 0,100% 0,50% 100%);border-radius:12px 12px 0 0;-webkit-transform-origin:top;transform-origin:top;transition:transform .8s;pointer-events:none}
+.env .seal{position:absolute;left:50%;top:50%;width:58px;height:58px;margin:-29px;border-radius:50%;background:#c4235f;background:radial-gradient(circle at 35% 30%,#ff75a3,#a61955);border:2px solid rgba(255,213,132,.67);display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;color:#fff5d6;font-size:1.5rem;box-shadow:0 6px 14px rgba(122,18,60,.5);transition:opacity .4s,transform .4s;pointer-events:none}
+.env:hover .seal{transform:scale(1.08)}
+.env .lbl{position:absolute;bottom:14px;left:0;right:0;color:#fff;font-size:1.15rem;font-style:italic;text-shadow:0 1px 4px rgba(163,34,102,.4);pointer-events:none}
+#open-mail:checked ~ .env .flap{transform:rotateX(180deg)}
+#open-mail:checked ~ .env .seal{opacity:0}
+.letter{max-height:0;opacity:0;overflow:hidden;transition:max-height 1.6s ease,opacity 1s .3s}
+#open-mail:checked ~ .letter{max-height:4200px;opacity:1}
+.paper{max-width:570px;margin:28px auto 0;padding:46px 32px 38px;text-align:left;border-radius:8px;font-size:1.3rem;line-height:1.85;
+  background:#fff7fa;
+  background:repeating-linear-gradient(transparent 0,transparent 2.04em,rgba(246,191,212,.27) 2.04em,rgba(246,191,212,.27) calc(2.04em + 1px)),linear-gradient(#fffbfd,#fff2f7);
+  box-shadow:0 26px 44px -22px rgba(194,24,91,.53),0 0 0 1px #ffc2d9}
+.paper p{margin-bottom:1em;opacity:0;transform:translateY(10px)}
+#open-mail:checked ~ .letter .paper p{animation:fin 1s ease both;animation-delay:calc(var(--i)*.85s + .6s)}
+.paper .to{font-size:2.45rem;color:var(--p4);line-height:1.2}
+.paper .sg{text-align:right;font-size:1.95rem;color:var(--p5);margin-top:1.2em;margin-bottom:0}
+
+/* Taman */
+.g-tools{text-align:center;margin-bottom:12px}
+.g-btn{margin:4px;background:rgba(255,255,255,.6);border:1px solid #f5a6c5;color:var(--p5);padding:4px 14px;border-radius:99px;font-size:1rem;transition:all .2s}
+.g-btn.active{background:var(--p4);color:#fff;border-color:var(--p4)}
+#garden{position:relative;height:380px;height:min(60vh,430px);border-radius:28px;overflow:hidden;cursor:crosshair;touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;
+  background:radial-gradient(circle at 50% 115%,rgba(156,209,164,.47),transparent 58%),radial-gradient(circle at 20% 20%,rgba(255,255,255,.8),transparent 45%),linear-gradient(180deg,#fff8fb,#ffd2e4);
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.87),0 20px 40px -22px rgba(194,24,91,.53)}
+#garden .hint{position:absolute;top:0;left:0;right:0;bottom:0;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;font-size:1.55rem;font-style:italic;pointer-events:none;transition:opacity .6s}
+.gl{position:absolute;pointer-events:none}
+.gl svg{width:100%;height:100%;overflow:visible}
+.fl{position:absolute;pointer-events:none;color:var(--p5);font-size:1.2rem;font-style:italic;font-weight:600;white-space:nowrap;text-shadow:0 2px 8px #fff;animation:up 2.1s ease-out forwards}
+@keyframes up{from{opacity:1;transform:translate(-50%,0)}to{opacity:0;transform:translate(-50%,-72px)}}
+#cnt{margin-top:14px;opacity:.88;font-style:italic}
+
+#end p{font-size:1.48rem;font-style:italic;margin:20px auto 26px;max-width:28ch}
+footer{padding:26px 20px 46px;text-align:center;opacity:.75;font-size:1.05rem}
+
+@media (max-width:420px){.badge{font-size:.8rem;letter-spacing:.04em;padding:4px 12px}.paper{padding:38px 22px 30px}}
+@media (max-height:480px){#intro svg{width:90px;height:90px}}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01s!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01s!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<input type="checkbox" id="gate" class="vh" aria-label="Buka kejutan" autocomplete="off">
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<!-- LAYAR PEMBUKA -->
+<div id="intro">
+  <svg viewBox="-85 -85 170 170" aria-hidden="true">
+    <g>
+      <use href="#po1"/><use href="#po1" transform="rotate(60)"/><use href="#po1" transform="rotate(120)"/><use href="#po1" transform="rotate(180)"/><use href="#po1" transform="rotate(240)"/><use href="#po1" transform="rotate(300)"/>
+      <use href="#po2" transform="rotate(30)"/><use href="#po2" transform="rotate(90)"/><use href="#po2" transform="rotate(150)"/><use href="#po2" transform="rotate(210)"/><use href="#po2" transform="rotate(270)"/><use href="#po2" transform="rotate(330)"/>
+    </g>
+    <circle r="10" fill="#f7b731"/><circle r="5.5" fill="#d98218"/>
+  </svg>
+  <h1 class="script">Ada kejutan kecil untukmu, Rista</h1>
+  <p>Spesial untuk 18 November</p>
+  <label for="gate" class="btn" role="button" tabindex="0">Buka Kejutan 💌</label>
+</div>
+
+<main>
+<section id="hero">
+  <svg id="crown" class="fade" style="--d:1.8s" viewBox="-4 -4 68 42" aria-hidden="true">
+    <defs><linearGradient id="gd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe799"/><stop offset=".5" stop-color="#f2b841"/><stop offset="1" stop-color="#c98518"/></linearGradient></defs>
+    <path d="M2 32 6 8l16 12L30 2l8 18L54 8l4 24Z" fill="url(#gd)" stroke="#b87a14" stroke-width="1.6" stroke-linejoin="round"/>
+    <circle cx="6" cy="7" r="3" fill="#ff8fb8"/><circle cx="30" cy="2" r="3.6" fill="#ff5c97"/><circle cx="54" cy="7" r="3" fill="#ff8fb8"/>
+  </svg>
+  <h1 class="t script fade" style="--d:1.95s">Selamat Hari Princess</h1>
+  <div class="script fade" style="--d:2.15s;font-size:3rem;font-size:clamp(2.7rem,10vw,4.4rem);color:var(--p4);line-height:1.15">Rista</div>
+  <div class="badge fade" style="--d:2.35s">✦ 18 November · National Princess Day ✦</div>
+
+  <svg id="bq" viewBox="0 0 420 510" role="img" aria-label="Buket bunga lily, peony, krisan November, dan baby breath">
+    <defs>
+      <linearGradient id="pg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="-74"><stop offset="0" stop-color="#e83e78"/><stop offset=".42" stop-color="#f8a5c5"/><stop offset="1" stop-color="#fff0f6"/></linearGradient>
+      <linearGradient id="pg2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="-74"><stop offset="0" stop-color="#f06292"/><stop offset=".45" stop-color="#ffb8d2"/><stop offset="1" stop-color="#fff7fa"/></linearGradient>
+      <radialGradient id="peo1" cx="50%" cy="65%" r="60%"><stop offset="0" stop-color="#d83370"/><stop offset=".65" stop-color="#ff8fb8"/><stop offset="1" stop-color="#ffd6e7"/></radialGradient>
+      <radialGradient id="peo2" cx="50%" cy="60%" r="60%"><stop offset="0" stop-color="#eb548b"/><stop offset=".7" stop-color="#ffb3d0"/><stop offset="1" stop-color="#fff0f6"/></radialGradient>
+      <linearGradient id="chry" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="-66"><stop offset="0" stop-color="#e35d7a"/><stop offset=".5" stop-color="#ff9ebb"/><stop offset="1" stop-color="#ffe6ef"/></linearGradient>
+
+      <!-- Bentuk kelopak (dipakai ulang) -->
+      <path id="lp1" fill="url(#pg)" stroke="#e04882" stroke-opacity=".3" stroke-width=".7" d="M0 0C-13-16-17-46 0-74C17-46 13-16 0 0Z"/>
+      <path id="lp2" fill="url(#pg2)" stroke="#e04882" stroke-opacity=".3" stroke-width=".7" d="M0 0C-13-16-17-46 0-74C17-46 13-16 0 0Z"/>
+      <path id="po1" fill="url(#peo1)" stroke="#d83370" stroke-opacity=".28" stroke-width=".8" d="M0 0C-26-14-34-54 0-64C34-54 26-14 0 0Z"/>
+      <path id="po2" fill="url(#peo2)" stroke="#e04882" stroke-opacity=".25" stroke-width=".7" d="M0 0C-21-12-27-43 0-51C27-43 21-12 0 0Z"/>
+      <path id="po3" fill="#ffd6e7" stroke="#f06292" stroke-opacity=".3" stroke-width=".6" d="M0 0C-15-8-19-31 0-37C19-31 15-8 0 0Z"/>
+      <path id="cp1" fill="url(#chry)" stroke="#d84374" stroke-opacity=".25" stroke-width=".6" d="M0 0C-6-18-7-48 0-64C7-48 6-18 0 0Z"/>
+      <path id="cp2" fill="#ffc4da" stroke="#e04882" stroke-opacity=".25" stroke-width=".6" d="M0 0C-6-18-7-48 0-64C7-48 6-18 0 0Z"/>
+      <g id="bf"><circle r="6.5" fill="#fff" stroke="#f5bfd4"/><circle r="2.2" fill="#ffe082"/></g>
+
+      <g id="sym-lily">
+        <use href="#lp1" transform="scale(1.04)"/><use href="#lp1" transform="rotate(120) scale(1.04)"/><use href="#lp1" transform="rotate(240) scale(1.04)"/>
+        <use href="#lp2" transform="rotate(60) scale(.92)"/><use href="#lp2" transform="rotate(180) scale(.92)"/><use href="#lp2" transform="rotate(300) scale(.92)"/>
+        <circle r="5.5" fill="#eaf6c8"/>
+        <path d="M0 0L8-21M0 0L22-7M0 0L14 18M0 0L-8 21M0 0L-22 7M0 0L-14-18" stroke="#f4a3c1" stroke-width="1.4" fill="none"/>
+        <g fill="#b5532b"><circle cx="8" cy="-21" r="2.8"/><circle cx="22" cy="-7" r="2.8"/><circle cx="14" cy="18" r="2.8"/><circle cx="-8" cy="21" r="2.8"/><circle cx="-22" cy="7" r="2.8"/><circle cx="-14" cy="-18" r="2.8"/></g>
+      </g>
+
+      <g id="sym-peony">
+        <use href="#po1"/><use href="#po1" transform="rotate(51)"/><use href="#po1" transform="rotate(103)"/><use href="#po1" transform="rotate(154)"/><use href="#po1" transform="rotate(206)"/><use href="#po1" transform="rotate(257)"/><use href="#po1" transform="rotate(309)"/>
+        <use href="#po2" transform="rotate(25)"/><use href="#po2" transform="rotate(85)"/><use href="#po2" transform="rotate(145)"/><use href="#po2" transform="rotate(205)"/><use href="#po2" transform="rotate(265)"/><use href="#po2" transform="rotate(325)"/>
+        <use href="#po3" transform="rotate(10)"/><use href="#po3" transform="rotate(82)"/><use href="#po3" transform="rotate(154)"/><use href="#po3" transform="rotate(226)"/><use href="#po3" transform="rotate(298)"/>
+        <circle r="9" fill="#f7b731"/><circle r="5" fill="#d98218"/>
+      </g>
+
+      <g id="sym-chry">
+        <use href="#cp1"/><use href="#cp1" transform="rotate(30)"/><use href="#cp1" transform="rotate(60)"/><use href="#cp1" transform="rotate(90)"/><use href="#cp1" transform="rotate(120)"/><use href="#cp1" transform="rotate(150)"/>
+        <use href="#cp1" transform="rotate(180)"/><use href="#cp1" transform="rotate(210)"/><use href="#cp1" transform="rotate(240)"/><use href="#cp1" transform="rotate(270)"/><use href="#cp1" transform="rotate(300)"/><use href="#cp1" transform="rotate(330)"/>
+        <g transform="rotate(15) scale(.76)">
+          <use href="#cp2"/><use href="#cp2" transform="rotate(36)"/><use href="#cp2" transform="rotate(72)"/><use href="#cp2" transform="rotate(108)"/><use href="#cp2" transform="rotate(144)"/>
+          <use href="#cp2" transform="rotate(180)"/><use href="#cp2" transform="rotate(216)"/><use href="#cp2" transform="rotate(252)"/><use href="#cp2" transform="rotate(288)"/><use href="#cp2" transform="rotate(324)"/>
+        </g>
+        <circle r="8.5" fill="#f5b027"/><circle r="5" fill="#c97a10"/>
+      </g>
+
+      <g id="sym-baby">
+        <path d="M0 55C-4 20-12-10-32-38M0 35C8 10 22-14 36-34M0 15C-2-12 4-35 0-56M-14 2C-28-8-38-18-46-26M14-4C26-12 36-20 44-24" fill="none" stroke="#7ab387" stroke-width="2.2" stroke-linecap="round"/>
+        <use href="#bf" x="-32" y="-38"/><use href="#bf" x="36" y="-34"/><use href="#bf" x="0" y="-56"/><use href="#bf" x="-46" y="-26"/><use href="#bf" x="44" y="-24"/><use href="#bf" x="-18" y="-44"/>
+        <use href="#bf" x="20" y="-42"/><use href="#bf" x="-10" y="-24"/><use href="#bf" x="14" y="-20"/><use href="#bf" x="-26" y="-12"/><use href="#bf" x="28" y="-10"/><use href="#bf" x="0" y="-36"/>
+      </g>
+    </defs>
+
+    <!-- Tangkai -->
+    <path class="stem" d="M210 450Q210 315 210 142"/>
+    <path class="stem" d="M210 450Q167 345 124 196"/>
+    <path class="stem" d="M210 450Q253 345 296 192"/>
+    <path class="stem" d="M210 450Q157 380 104 266"/>
+    <path class="stem" d="M210 450Q263 380 316 262"/>
+    <path class="stem" d="M210 450Q189 360 168 228"/>
+    <path class="stem" d="M210 450Q231 360 254 228"/>
+
+    <!-- Dedaunan -->
+    <path d="M210 410C150 388 94 398 70 342C132 332 194 360 210 410Z" fill="#68a878"/>
+    <path d="M210 410C270 388 326 398 350 342C288 332 226 360 210 410Z" fill="#589668"/>
+    <path d="M210 380C182 346 172 314 188 282C214 310 222 346 210 380Z" fill="#7bc08c"/>
+
+    <!-- Baby's breath -->
+    <g transform="translate(112 146) scale(.85) rotate(-22)"><g class="bloom" style="--d:1.3s"><use href="#sym-baby"/></g></g>
+    <g transform="translate(308 144) scale(.85) rotate(22)"><g class="bloom" style="--d:1.4s"><use href="#sym-baby"/></g></g>
+    <g transform="translate(210 108) scale(.75)"><g class="bloom" style="--d:1.5s"><use href="#sym-baby"/></g></g>
+
+    <!-- Kertas & pita -->
+    <path d="M114 334H306L234 490H186Z" fill="#ffe3ee" stroke="#f59fc1" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M158 338 198 488M262 338 222 488" stroke="#f59fc1" stroke-width="1.4" opacity=".7" fill="none"/>
+    <g transform="translate(210 406)">
+      <path d="M0 0C-34-30-68-12-54 12C-44 26-12 12 0 0Z" fill="#e04882"/>
+      <path d="M0 0C34-30 68-12 54 12C44 26 12 12 0 0Z" fill="#f06292"/>
+      <path d="M0 0C-14 30-30 48-34 66M0 0C14 30 30 48 34 66" stroke="#e04882" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+      <circle r="10" fill="#b51756"/><circle r="4" fill="#ffd584"/>
+    </g>
+
+    <!-- Bunga utama -->
+    <g transform="translate(210 145) scale(1.04) rotate(6)"><g class="bloom" style="--d:.45s"><use href="#sym-lily"/></g></g>
+    <g transform="translate(132 194) scale(.96) rotate(-14)"><g class="bloom" style="--d:.65s"><use href="#sym-peony"/></g></g>
+    <g transform="translate(288 190) scale(.96) rotate(16)"><g class="bloom" style="--d:.8s"><use href="#sym-peony"/></g></g>
+    <g transform="translate(106 256) scale(.78) rotate(-24)"><g class="bloom" style="--d:.95s"><use href="#sym-chry"/></g></g>
+    <g transform="translate(314 252) scale(.78) rotate(24)"><g class="bloom" style="--d:1.05s"><use href="#sym-chry"/></g></g>
+    <g transform="translate(166 226) scale(.82) rotate(-8)"><g class="bloom" style="--d:1.15s"><use href="#sym-lily"/></g></g>
+    <g transform="translate(254 224) scale(.82) rotate(12)"><g class="bloom" style="--d:1.25s"><use href="#sym-lily"/></g></g>
+    <g transform="translate(210 274) scale(.84)"><g class="bloom" style="--d:1.35s"><use href="#sym-chry"/></g></g>
+  </svg>
+
+  <a href="#arti" class="down fade" style="--d:2.6s">lihat makna bunganya ⌄</a>
+</section>
+
+<!-- MAKNA BUNGA -->
+<section id="arti">
+  <h2 class="script">Makna di balik buket ini</h2>
+  <p class="sub">Pilih bunganya untuk melihat alasan kenapa ia ada di sini.</p>
+
+  <input type="radio" name="flw" id="f1" class="vh" aria-label="Lily" checked autocomplete="off">
+  <input type="radio" name="flw" id="f2" class="vh" aria-label="Peony" autocomplete="off">
+  <input type="radio" name="flw" id="f3" class="vh" aria-label="Krisan" autocomplete="off">
+  <input type="radio" name="flw" id="f4" class="vh" aria-label="Baby's Breath" autocomplete="off">
+
+  <div class="tabs">
+    <label for="f1" class="tab t1">🌸 Lily Merah Muda</label>
+    <label for="f2" class="tab t2">🌺 Peony (Ratu Bunga)</label>
+    <label for="f3" class="tab t3">🌼 Krisan November</label>
+    <label for="f4" class="tab t4">🤍 Baby's Breath</label>
+  </div>
+
+  <div class="stage">
+    <div class="fcard c1">
+      <svg class="f-svg" viewBox="-85 -85 170 170" aria-hidden="true"><use href="#sym-lily"/></svg>
+      <div class="why"><span class="tag">Keanggunan &amp; Ketulusan</span><b class="script">Lily Merah Muda</b>
+        Melambangkan kelembutan dan rasa kagum. Sama seperti caramu bikin suasana sekitar terasa nyaman dan selalu bikin orang lain ikut tersenyum.</div>
+    </div>
+    <div class="fcard c2">
+      <svg class="f-svg" viewBox="-85 -85 170 170" aria-hidden="true"><use href="#sym-peony"/></svg>
+      <div class="why"><span class="tag">Simbol Sang Putri (Ratu Bunga)</span><b class="script">Peony Merah Muda</b>
+        Dikenal sebagai Ratu Bunga—paling pas untuk merayakan Hari Princess. Kelopaknya yang mekar penuh melambangkan kasih sayang dan pesona yang hangat.</div>
+    </div>
+    <div class="fcard c3">
+      <svg class="f-svg" viewBox="-85 -85 170 170" aria-hidden="true"><use href="#sym-chry"/></svg>
+      <div class="why"><span class="tag">Bunga Kelahiran Bulan November</span><b class="script">Krisan November</b>
+        Bunga resmi bulan November yang melambangkan ketulusan dan kegembiraan. Hadir khusus untuk menandai tanggal 18 November milikmu.</div>
+    </div>
+    <div class="fcard c4">
+      <svg class="f-svg" viewBox="-85 -85 170 170" aria-hidden="true"><use href="#sym-baby"/></svg>
+      <div class="why"><span class="tag">Ketulusan dalam Hal Kecil</span><b class="script">Baby's Breath</b>
+        Kelopak-kelopak kecil yang menyatukan seluruh buket—seperti perhatian dan tingkah randommu yang diam-diam selalu saya syukuri.</div>
+    </div>
+  </div>
+</section>
+
+<!-- SURAT -->
+<section id="surat">
+  <h2 class="script">Sepucuk surat</h2>
+  <p class="sub">Dari saya, untuk kamu.</p>
+  <div id="mail">
+    <input type="checkbox" id="open-mail" class="vh" aria-label="Buka surat" autocomplete="off">
+    <label for="open-mail" class="env" role="button" tabindex="0">
+      <span class="flap"></span><span class="seal">R</span><span class="lbl">Untuk Rista · ketuk untuk membuka</span>
+    </label>
+    <div class="letter"><div class="paper">
+      <p class="to script" style="--i:0">Untuk Rista,</p>
+      <p style="--i:1">Selamat Hari Princess. Hari ini saya cuma ingin bilang satu hal sederhana: kamu pantas dirayakan—bukan cuma di tanggal 18 November, tapi di setiap hari yang kamu lewati.</p>
+      <p style="--i:2">Di buket ini saya satukan Lily merah muda yang lembut, Peony si Ratu Bunga, Krisan sebagai bunga kelahiran bulan November, dan Baby's Breath untuk semua hal kecil darimu yang diam-diam selalu saya syukuri.</p>
+      <p style="--i:3">Terima kasih sudah hadir dengan segala versi dirimu yang apa adanya—yang kadang ceria, kadang manja, tapi selalu berhasil bikin hari-hari saya terasa jauh lebih tenang dan hangat.</p>
+      <p style="--i:4">Semoga kamu selalu dikelilingi hal-hal baik, tawa yang lepas, dan kebahagiaan yang utuh. Kalau suatu hari kamu merasa lelah, ingat ya bahwa selalu ada seseorang di sini yang bangga sama kamu.</p>
+      <p style="--i:5">Bunga-bunga ini memang cuma rangkaian piksel dan tidak akan layu, tapi doaku untukmu selalu nyata.</p>
+      <p class="sg script" style="--i:6">Dengan sepenuh hati,<br>Seseorang yang selalu tersenyum karena kamu</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- TAMAN -->
+<section id="taman">
+  <h2 class="script">Taman kecil untukmu</h2>
+  <p class="sub">Sentuh di mana saja pada taman untuk menumbuhkan bungamu.</p>
+  <div class="g-tools">
+    <button type="button" class="g-btn active" data-gtype="mix">✨ Campur</button>
+    <button type="button" class="g-btn" data-gtype="sym-lily">🌸 Lily</button>
+    <button type="button" class="g-btn" data-gtype="sym-peony">🌺 Peony</button>
+    <button type="button" class="g-btn" data-gtype="sym-chry">🌼 Krisan</button>
+  </div>
+  <div id="garden"><div class="hint">Sentuh tamannya 🌷</div></div>
+  <p id="cnt" aria-live="polite">Belum ada bunga yang mekar.</p>
+</section>
+
+<section id="end">
+  <h2 class="script">Satu permintaan kecil</h2>
+  <p id="endmsg">Kalau kamu sudah tersenyum hari ini, tekan tombol ini ya.</p>
+  <button type="button" class="btn" id="smile">Aku tersenyum 🌸</button>
+</section>
+</main>
+
+<footer>Dibuat khusus untuk Rista · 18 November 2026</footer>
+
+<script>
+(function(){
+'use strict';
+var $=function(s){return document.querySelector(s)},R=Math.random;
+var calm=!!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+/* Label berperan tombol: aktifkan dengan Enter / Spasi */
+document.querySelectorAll('label[role="button"]').forEach(function(l){
+  l.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();l.click()}});
+});
+function view(el){try{el.scrollIntoView({behavior:'smooth',block:'center'})}catch(_){el.scrollIntoView()}}
+
+/* ---------- Kanvas kelopak (tajam di layar retina) ---------- */
+var cv=$('#petals'),cx=cv.getContext('2d'),W=0,H=0,ps=[];
+function rs(){
+  var w=innerWidth,h=innerHeight;if(w===W&&h===H)return;W=w;H=h;
+  var d=Math.min(window.devicePixelRatio||1,2);
+  cv.width=Math.round(W*d);cv.height=Math.round(H*d);cx.setTransform(d,0,0,d,0,0);
+}
+addEventListener('resize',rs);rs();
+var C=['#ffc2d9','#ff9ec2','#ffd9e8','#f78fb3','#ffe6a3'];
+function mk(x,y,b,up){return{x:x,y:y,s:5+R()*8,b:b,vx:(R()-.5)*(b?7:.8),vy:b?(up?-6-R()*9:-2-R()*5):.55+R()*1.05,r:R()*6.28,vr:(R()-.5)*.06,ph:R()*6.28,c:C[(R()*5)|0],spark:R()>.75}}
+var amb=calm?0:(innerWidth<600?14:24);
+for(var i=0;i<amb;i++)ps.push(mk(R()*W,R()*H,false));
+function burst(x,y,n,up){
+  if(calm)n=Math.ceil(n/4);
+  if(ps.length>420)return;
+  for(var i=0;i<n;i++)ps.push(mk(up?R()*W:x,y,true,up));
+}
+(function loop(){
+  cx.clearRect(0,0,W,H);
+  for(var i=ps.length-1;i>=0;i--){
+    var p=ps[i];
+    p.ph+=.022;p.x+=p.vx+(p.b?0:Math.sin(p.ph)*.6);p.y+=p.vy;p.r+=p.vr;
+    if(p.b){p.vy=Math.min(p.vy+.1,2.2);p.vx*=.985;if(p.y>H+30&&p.vy>0){ps.splice(i,1);continue}}
+    else if(p.y>H+20){p.y=-20;p.x=R()*W}
+    cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.globalAlpha=.85;cx.fillStyle=p.c;
+    if(p.spark){cx.beginPath();cx.arc(0,0,p.s*.42,0,6.28);cx.fill()}
+    else{
+      cx.scale(1,.6+.4*Math.abs(Math.cos(p.ph)));cx.beginPath();
+      cx.moveTo(0,-p.s);cx.bezierCurveTo(p.s*.9,-p.s*.4,p.s*.7,p.s*.7,0,p.s);cx.bezierCurveTo(-p.s*.7,p.s*.7,-p.s*.9,-p.s*.4,0,-p.s);cx.fill();
+    }
+    cx.restore();
+  }
+  requestAnimationFrame(loop);
+})();
+
+/* ---------- Buka kejutan ---------- */
+$('#gate').addEventListener('change',function(){
+  if(this.checked){document.body.classList.add('go');burst(innerWidth/2,innerHeight*.6,65);window.scrollTo(0,0)}
+});
+
+/* ---------- Tab bunga ---------- */
+document.querySelectorAll('.tab,.f-svg').forEach(function(el){
+  el.addEventListener('click',function(e){burst(e.clientX||innerWidth/2,e.clientY||innerHeight/2,14)});
+});
+
+/* ---------- Surat ---------- */
+$('#open-mail').addEventListener('change',function(){
+  if(this.checked){burst(innerWidth/2,innerHeight/2,30);setTimeout(function(){view($('.paper'))},650)}
+});
+
+/* ---------- Taman ---------- */
+(function(){
+  var g=$('#garden'),n=0,mode='mix',last=0;
+  var M=["Kamu cantik 💗","Princess Rista 👑","Tetap tersenyum 🌸","Kamu berharga ✨","Bahagia selalu 🌷","Disayang banget 💞"];
+  var T=['sym-lily','sym-peony','sym-chry'];
+  document.querySelectorAll('.g-btn').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.querySelectorAll('.g-btn').forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');mode=b.getAttribute('data-gtype');
+    });
+  });
+  function plant(px,py){
+    var t=Date.now();if(t-last<60)return;last=t;
+    var r=g.getBoundingClientRect(),x=px-r.left,y=py-r.top,z=72+R()*62,k=mode==='mix'?T[(R()*3)|0]:mode;
+    var d=document.createElement('div');d.className='gl';
+    d.style.cssText='left:'+(x-z/2)+'px;top:'+(y-z/2)+'px;width:'+z+'px;height:'+z+'px;transform:rotate('+((R()*80-40)|0)+'deg)';
+    d.innerHTML='<svg viewBox="-85 -85 170 170" aria-hidden="true"><g class="bloom"><use href="#'+k+'"/></g></svg>';
+    g.appendChild(d);
+    var all=g.querySelectorAll('.gl');if(all.length>36)all[0].remove();
+    var f=document.createElement('div');f.className='fl';f.textContent=M[(R()*M.length)|0];
+    f.style.left=x+'px';f.style.top=(y-z/2)+'px';g.appendChild(f);setTimeout(function(){f.remove()},2100);
+    n++;$('.hint').style.opacity=0;
+    $('#cnt').textContent=n+(n<10?' bunga mekar untukmu 🌸':' bunga mekar. Tamanmu makin indah 💐');
+    burst(px,py,8);
+  }
+  /* Satu event saja (pointerup) agar tidak dobel, dan gulir halaman di HP tidak ikut menanam bunga */
+  g.addEventListener(window.PointerEvent?'pointerup':'click',function(e){if(e.button>0)return;plant(e.clientX,e.clientY)});
+})();
+
+/* ---------- Tombol akhir ---------- */
+$('#smile').addEventListener('click',function(){
+  burst(innerWidth/2,innerHeight+10,130,true);
+  $('#endmsg').innerHTML='Misi berhasil. Terima kasih sudah tersenyum hari ini, <span class="script" style="font-size:2rem;color:var(--p4)">Rista</span>. Selamat Hari Princess 👑💗';
+});
+})();
+</script>
+</body>
+</html>
